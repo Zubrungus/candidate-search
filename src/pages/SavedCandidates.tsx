@@ -1,12 +1,12 @@
 import CandidateRow from "../components/CandidateRow.tsx";
 import Candidate from '../interfaces/Candidate.interface.tsx';
 
-//Load candidate data from local storage
-
 const SavedCandidates = () => {
-  
+
+  //Load candidate data from local storage
   const candidateData: Candidate[] = JSON.parse(localStorage.getItem('savedCandidates') || '[]') as Candidate[];
 
+//create object of all row elements
   const candidateElements: JSX.Element[] = candidateData.map(candidate => (
     <CandidateRow
       key={candidate.username}
@@ -19,6 +19,7 @@ const SavedCandidates = () => {
     />
   ));
 
+  //checks if data exists or not and renders accordingly
   return (candidateData.length < 1
     ? <>
       <h1>No saved candidates</h1>
