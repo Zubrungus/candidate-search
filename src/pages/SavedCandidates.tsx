@@ -1,9 +1,12 @@
 import CandidateRow from "../components/CandidateRow.tsx";
 import Candidate from '../interfaces/Candidate.interface.tsx';
 
-const candidateData: Candidate[] = JSON.parse(localStorage.getItem('savedCandidates') || '[]') as Candidate[];
+//Load candidate data from local storage
 
 const SavedCandidates = () => {
+  
+  const candidateData: Candidate[] = JSON.parse(localStorage.getItem('savedCandidates') || '[]') as Candidate[];
+
   const candidateElements: JSX.Element[] = candidateData.map(candidate => (
     <CandidateRow
       key={candidate.username}

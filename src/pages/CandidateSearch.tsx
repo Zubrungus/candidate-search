@@ -63,7 +63,7 @@ const CandidateSearch = () => {
   }, [currentCandidate]);
 
 
-
+//Only render the candidate information template if candidates remain
   return (currentCandidate > 20
     ? <>
       <h1>No more candidates</h1>

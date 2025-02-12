@@ -1,4 +1,4 @@
-export default interface Candidate{
+export default interface Candidate {
     name?: string;
     username: string;
     location?: string;
