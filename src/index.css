@@ -62,19 +62,6 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
-
 main {
   color: #fff;
   width: 100%;
@@ -111,4 +98,17 @@ nav ul a{
 .table {
   width: 80vw;
   table-layout: fixed;
+}
+
+.candidate{
+  background: white;
+  border-radius: 2em;
+  color: black;
+  padding: 2em;
+}
+
+.choices{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
