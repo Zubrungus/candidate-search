@@ -8,7 +8,7 @@
 ## Description
 A web application made with React and Typescript, used to bring up github profiles as potential candidates. You can choose to accept or reject each shown candidate, and then view a table of saved candidates.
 ## Usage
-The link to the deployed site is here. Click the red button to reject a candidate, and the green button to accept. Use the navigation bar at the top to view your saved candidates.
+The link to the deployed site is [here.](https://nick-bappe-candidate-search.netlify.app/) Click the red button to reject a candidate, and the green button to accept. Use the navigation bar at the top to view your saved candidates.
 ## License
 This software is covered under the GNU GPL V3 license
 ## Questions
