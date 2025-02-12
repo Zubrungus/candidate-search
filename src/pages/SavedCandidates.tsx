@@ -5,12 +5,13 @@ const candidateData: Candidate[] = JSON.parse(localStorage.getItem('savedCandida
 
 const SavedCandidates = () => {
   const candidateElements: JSX.Element[] = candidateData.map(candidate => (
-    <CandidateRow 
-      avatar={candidate.avatar} 
-      name={candidate.name} 
-      username={candidate.username} 
-      location={candidate.location} 
-      email={candidate.email} 
+    <CandidateRow
+      key={candidate.username}
+      avatar={candidate.avatar}
+      name={candidate.name}
+      username={candidate.username}
+      location={candidate.location}
+      email={candidate.email}
       company={candidate.company}
     />
   ));
